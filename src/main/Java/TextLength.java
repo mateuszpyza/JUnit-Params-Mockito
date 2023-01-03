@@ -3,6 +3,7 @@ public class TextLength {
         if (text != null) {
             return text.length();
         }
+        System.out.println("Input data is null!");
         return 0;
     }
 }
