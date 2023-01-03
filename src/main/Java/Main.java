@@ -1,5 +1,5 @@
 public class Main {
     public static void main(String[] main) {
-        TextLength.getTextLength(null);
+        TextLength.getTextLength("");
     }
 }

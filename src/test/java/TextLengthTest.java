@@ -28,11 +28,8 @@ class TextLengthTest {
     @ParameterizedTest
     @NullSource
     void shouldVerifyNullStringTextLength(String input) {
-        NullPointerException exception = Assertions.assertThrows(NullPointerException.class, () -> {
-            TextLength.getTextLength(null);
-        });
 
-        Assertions.assertEquals("Input data problems!", exception.getMessage());
+        Assertions.assertEquals(0, TextLength.getTextLength(input));
     }
 
 }
